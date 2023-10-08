@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <parameter name="appURL" value="https://www.google.com.vn/" />
+  <test name="FirefoxTest">
+        <parameter name="browser" value="firefox" />
+        <classes>
+           <class name="fpt.poly.testing.DemoTestNG_Slide6_Parameter"/>
+        </classes>
+    </test>
+    
+ <test name="ChromeTest">
+        <parameter name="browser" value="chrome" />
+        <classes>
+           <class name="fpt.poly.testing.DemoTestNG_Slide6_Parameter"/>
+        </classes>
+    </test> 
+    
+</suite> <!-- Suite -->

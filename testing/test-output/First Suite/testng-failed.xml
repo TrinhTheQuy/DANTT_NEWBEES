@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [First Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Tests on Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="fpt.poly.testing.DemoSeleniumGrid">
+        <methods>
+          <include name="setUp"/>
+          <include name="googleTitleTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- fpt.poly.testing.DemoSeleniumGrid -->
+    </classes>
+  </test> <!-- Tests on Firefox(failed) -->
+</suite> <!-- Failed suite [First Suite] -->
