@@ -52,121 +52,58 @@
     <link href="http://static.runtime.vn/App_Themes/RUN045/style.css" rel="stylesheet" type="text/css" />
     <link href="http://static.runtime.vn/App_Themes/RUN045/responsive.css" rel="stylesheet" type="text/css" />
 
-    
+    <link rel="stylesheet" href="/css/quenmk.css">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     
 </head>
-<body ng-app="appMain" style="background:#d1d45c">
-        <div id="fb-root"></div>
-        <script>
-            (function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=227481454296289";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
-    
+<body ng-app="appMain" style="background:rgb(255, 246, 246)">
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=227481454296289";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 
 <div class="wrapper">
-    
-        <div class="header">
+
+    <div class="header">
 
 <script src="/Scripts/common/login.js" type="text/javascript"></script>
-    <section class="top-link clearfix">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="nav navbar-nav topmenu-contact pull-left">
-                        <li><i class="fa fa-phone"></i> <span>Hotline:0969012033</span></li>
-                    </ul>
-                        <ul class="nav navbar-nav navbar-right topmenu  hidden-xs hidden-sm">
-                            <li class="order-check"><a href="/kiem-tra-don-hang.html"><i class="fa fa-pencil-square-o"></i> Kiểm tra đơn hàng</a></li>
-                            <li class="order-cart"><a href="/gio-hang.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
-                            <li class="account-login"><a href="/dang-nhap.html"><i class="fa fa-sign-in"></i> Đăng nhập </a></li>
-                            <li class="account-register"><a href="/dang-ky.html"><i class="fa fa-key"></i> Đăng ký </a></li>
-                        </ul>
-                    <div class="show-mobile hidden-lg hidden-md">
-                        <div class="quick-user">
-                            <div class="quickaccess-toggle">
-                                <i class="fa fa-user"></i>
-                            </div>
-                            <div class="inner-toggle">
-                                    <ul class="login links">
-                                        <li>
-                                            <a href="/dang-ky.html"><i class="fa fa-sign-in"></i> Đăng ký</a>
-                                        </li>
-                                        <li>
-                                            <a href="/dang-nhap.html"><i class="fa fa-key"></i> Đăng nhập</a>
-                                        </li>
-                                    </ul>
-                            </div>
-                        </div>
-                        <div class="quick-access">
-                            <div class="quickaccess-toggle">
-                                <i class="fa fa-list"></i>
-                            </div>
-                            <div class="inner-toggle">
-                                <ul class="links">
-                                    <li><a id="mobile-wishlist-total" href="/kiem-tra-don-hang.html" class="wishlist"><i class="fa fa-pencil-square-o"></i> Kiểm tra đơn hàng</a></li>
-                                    <li><a href="/gio-hang.html" class="shoppingcart"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!--Template--
-<section class="top-link clearfix" ng-controller="moduleController" ng-init="initTopLinkController('Shop','AccountLogin')">
+<section class="top-link clearfix">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <ul class="nav navbar-nav topmenu-contact pull-left">
-                    <li><i class="fa fa-phone"></i> <span>Hotline:{{shop.Hotline}}</span></li>
+                    <li><i class="fa fa-phone"></i> <span>Hotline:0969012033</span></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right topmenu  hidden-xs hidden-sm" ng-if="accountLogin==null">
-                    <li class="order-check"><a href="/kiem-tra-don-hang.html"><i class="fa fa-pencil-square-o"></i> Kiểm tra đơn hàng</a></li>
-                    <li class="order-cart"><a href="/gio-hang.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
-                    <li class="account-login"><a href="/dang-nhap.html"><i class="fa fa-sign-in"></i> Đăng nhập </a></li>
-                    <li class="account-register"><a href="/dang-ky.html"><i class="fa fa-key"></i> Đăng ký </a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right topmenu hidden-xs hidden-sm" ng-if="accountLogin!=null">
-                    <li class="order-check"><a href="/kiem-tra-don-hang.html"><i class="fa fa-pencil-square-o"></i> Kiểm tra đơn hàng</a></li>
-                    <li class="order-cart"><a href="/gio-hang.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
-                    <li class="webmaster"><a href="/admin"><i class="fa fa-gears"></i> Quản trị website</a></li>
-                    <li class="account-info">
-                        <a href="/thong-tin-tai-khoan.html">{{accountLogin.Email}}</a>
-                        <a class="account-logout" id="btnLogOff" href="javascript:void(0)" title="">[Thoát] </a>
-                    </li>
-                </ul>
+                    <ul class="nav navbar-nav navbar-right topmenu  hidden-xs hidden-sm">
+                        <li class="account-login"><a href="/dang-nhap.html"><i class="fa fa-sign-in"></i> Đăng nhập </a></li>
+                        <li class="account-register"><a href="/dang-ky.html"><i class="fa fa-key"></i> Đăng ký </a></li>
+                    </ul>
                 <div class="show-mobile hidden-lg hidden-md">
                     <div class="quick-user">
                         <div class="quickaccess-toggle">
                             <i class="fa fa-user"></i>
                         </div>
                         <div class="inner-toggle">
-                            <ul class="login links" ng-if="accountLogin==null">
-                                <li>
-                                    <a href="/dang-ky.html"><i class="fa fa-sign-in"></i> Đăng ký</a>
-                                </li>
-                                <li>
-                                    <a href="/dang-nhap.html"><i class="fa fa-key"></i>Đăng nhập</a>
-                                </li>
-                            </ul>
-                            <ul class="login links" ng-if="accountLogin!=null">
-                                <li ng-if="accountLogin.AccountTypeId==1">
-                                    <a href="/admin"><i class="fa fa-gears"></i> Quản trị website</a>
-                                </li>
-                                <li>
-                                    <a href="/thong-tin-tai-khoan.html">{{accountLogin.Email}}</a>
-                                </li>
-                                <li>
-                                    <a id="btnLogOff2" href="javascript:void(0)"><i class="fa fa-sign-out"></i> [Thoát] </a>
-                                </li>
-                            </ul>
+                                <ul class="login links">
+                                    <li>
+                                        <a href="/dang-ky.html"><i class="fa fa-sign-in"></i> Đăng ký</a>
+                                    </li>
+                                    <li>
+                                        <a href="/dang-nhap.html"><i class="fa fa-key"></i> Đăng nhập</a>
+                                    </li>
+                                </ul>
                         </div>
                     </div>
                     <div class="quick-access">
@@ -181,93 +118,26 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 </section>
---End-->
-
-        <section class="header-content clearfix">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-12 logo text-center">
-                        <a href="/" title="">
-                            <img alt="" src="/Uploads/shop324/images/pregnancy-birth-baby-logo.png" class="img-responsive" />
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-sm-5 col-xs-12 top-search">
-                        <div class="search">
-                            <div class="input-cat form-search clearfix">
-                                <div class="form-search-controls input-group">
-                                    <input type="text" name="search" id="txtsearch" onblur="if(this.value=='')this.value='Tìm kiếm...'"
-                                           onfocus="if(this.value=='Tìm kiếm...')this.value=''" value="T&#236;m kiếm..." />
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-search" title="Search" type="button" id="btnsearch" value="Search">
-                                            <i class="fa fa-search"></i>
-                                        </button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="social-group">
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-4 col-xs-12 top-cart hidden-xs">
-                        <div class="cart">
-                            <div class="heading">
-                                <a href="/gio-hang.html">
-                                    <span class="icon">icon</span><span id="cart-total">
-                                        0
-                                        sp - 0đ
-                                    </span><i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-        </section>
-        <script type="text/javascript">
-            $("#btnsearch").click(function () {
-                SearchProduct();
-            });
-            $("#txtsearch").keydown(function (event) {
-                if (event.keyCode == 13) {
-                    SearchProduct();
-                }
-            });
-            function SearchProduct() {
-                var key = $('#txtsearch').val();
-                if (key == '' || key == 'Tìm kiếm...') {
-                    $('#txtsearch').focus();
-                    return;
-                }
-                var group = $('#lbgroup').val();
-                window.location = '/tim-kiem.html?group=' + group + '&key=' + key;
-            }
-        </script>
-<!--Template--
-<section ng-controller="moduleController" ng-init="initHeaderController('Shop','MyCart','ProductGroups','Search')">
-    <section class="header-banner" ng-if="shop.IsBanner==true" ng-class="{'container': shop.IsFixed==false}">
-        <a href="/"><img ng-src="{{shop.BannerImage}}" class="img-responsive"></a>
-    </section>
-    <section class="header-content clearfix" ng-if="shop.IsBanner==false">
+    <section class="header-content clearfix">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-12 logo">
+                <div class="col-md-3 col-sm-3 col-xs-12 logo text-center">
                     <a href="/" title="">
-                        <img alt="{{shop.Name}}" ng-src="{{shop.Logo}}" class="img-responsive" />
+                        <img alt="" src="/images/logo.png" class="img-responsive" />
                     </a>
                 </div>
                 <div class="col-md-6 col-sm-5 col-xs-12 top-search">
-                    <div class="search hidden-sm hidden-xs">
+                    <div class="search">
                         <div class="input-cat form-search clearfix">
                             <div class="form-search-controls input-group">
-                                <input type="text" name="search" id="txtsearch" onblur="if(this.value=='')this.value='Tìm kiếm...'"
-                                       onfocus="if(this.value=='Tìm kiếm...')this.value=''" ng-model="search.Key" />
+                                <input type="text" name="search" id="timkiem" onblur="if(this.value=='')this.value='Tìm kiếm...'"
+                                       onfocus="if(this.value=='Tìm kiếm...')this.value=''" value="T&#236;m kiếm..." />
                                 <span class="input-group-btn">
-                                    <button class="btn btn-search" title="Search" type="submit" id="boss-button-search" value="Search">
+                                    <button class="btn btn-search" title="Search" type="button" id="btntimkiem" value="Search">
                                         <i class="fa fa-search"></i>
                                     </button>
                                 </span>
@@ -282,54 +152,15 @@
                         <div class="heading">
                             <a href="/gio-hang.html">
                                 <span class="icon">icon</span><span id="cart-total">
-                                    {{myCart.ModelSM_OrderDetail.length}}
-                                    sp - {{myCart.TotalAmount|number:0}}đ
+                                    0
+                                    sp - 0đ
                                 </span><i class="fa fa-arrow-right"></i>
                             </a>
-                        </div>
-                        <div class="box-cart-dropdown" ng-if="myCart.ModelSM_OrderDetail.length>0">
-                            <div class="box-cart-dropdown-block">
-                                <div class="total">
-                                    Có <a href="/gio-hang.html"><span>{{myCart.ModelSM_OrderDetail.length}}</span> sản phẩm</a>
-                                    trong giỏ.<br />
-                                </div>
-                                <ul>
-                                    <li class="clearfix" ng-repeat="item in myCart.ModelSM_OrderDetail">
-                                        <figure class="image">
-                                            <a href="/san-pham/{{item.ProductCode}}.html">
-                                                <img alt="{{item.ProductName}}" ng-src="{{item.ProductImage}}" class="img-responsive" />
-                                            </a>
-                                        </figure>
-                                        <div class="name">
-                                            <a href="/san-pham/{{item.ProductCode}}.html">{{item.ProductName}}</a>
-                                            <div>
-                                                {{item.Quantity}} x <span class="price">
-                                                    {{item.Price|number:0}}₫
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <span class="remove_link">
-                                            <a href="javascript:void(0);" class="remove-cart" ng-click="removeItemCart(item)"><i class="fa fa-times-circle"></i></a>
-                                        </span>
-                                    </li>
-                                </ul>
-                                <div class="cart-payment">
-                                    <div class="amount">
-                                        Tổng tiền: <strong>
-                                            {{myCart.TotalAmount|number:0}}₫
-                                        </strong>
-                                    </div>
-                                    <div class="btn-payment">
-                                        <a class="btn btn-default" href="/thanh-toan.html">Đặt hàng &amp; Thanh toán</a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-        </div>
     </section>
     <script type="text/javascript">
         $("#btnsearch").click(function () {
@@ -346,12 +177,10 @@
                 $('#txtsearch').focus();
                 return;
             }
-            var group = angular.element(document.getElementById('lbgroup')).scope().search.ProductGroupId;
+            var group = $('#lbgroup').val();
             window.location = '/tim-kiem.html?group=' + group + '&key=' + key;
         }
     </script>
-</section>
---End-->
 
 <section class="navigation-menu clearfix">
     <div class="container">
@@ -389,42 +218,8 @@
         });
     });
 </script>
-<!--Template--
-<section class="navigation-menu clearfix">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar nav-menu">
-                    <div class="navbar-header">
-                        <button aria-expanded="false" aria-controls="mobile-menu" data-target="#mobile-menu" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <nav class="mobile-menu collapse navbar-collapse" id="mobile-menu">
-                        <ul class="menu nav navbar-nav">
-                            <li class="level0"><a href="/trang-chu.html" class=""><span>Trang chủ</span></a></li>
-                            <li class="level0"><a href="/gioi-thieu.html" class=""><span>Giới thiệu</span></a></li>
-                            <li class="level0"><a href="/san-pham.html" class=""><span>Sản phẩm</span></a></li>
-                            <li class="level0"><a href="/tin-tuc.html" class=""><span>Tin tức</span></a></li>
-                            <li class="level0"><a href="/lien-he.html" class=""><span>Liên hệ</span></a></li>
-                        </ul>
-                    </nav>
-                </nav>
-            </div>
-        </div>
-    </div>
-</section>
---End-->
-        </div>
-
-
-    
-
-    
-
-    
+        
+</div>
     <div class="main">
         <div class="container">
             <div class="row">
@@ -438,7 +233,7 @@
     <ul>
         <li><a href="/dang-nhap.html"><i class="fa fa-sign-in"></i>Đăng nhập</a></li>
         <li><a href="/dang-ky.html"><i class="fa fa-key"></i>Đăng ký</a></li>
-        <li><a href="/thay-doi-mat-khau.html"><i class="fa fa-key"></i>Quên mật khẩu</a></li>
+        <li><a href="/quen-mat-khau.html"><i class="fa fa-key"></i>Quên mật khẩu</a></li>
     </ul>
 </div>                    </div>
                     <div class="col-md-9">
@@ -457,7 +252,7 @@
 <script src="/app/services/accountServices.js"></script>
 <script src="/app/controllers/accountController.js"></script>
 <div class="foget-password-content clearfix" ng-controller="accountController" ng-init="initController()">
-    <h1 class="title clearfix""><span>Quên mật khẩu</span></h1>
+    <h1 class="title clearfix"><span>Quên mật khẩu</span></h1>
     <div ng-if="IsError" class="alert alert-danger fade in">
         <button data-dismiss="alert" class="close"></button>
         <i class="fa-fw fa fa-times"></i>
@@ -506,7 +301,7 @@
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-4 col-sm-8">
-                    <button type="submit" class="btn btn-default">Gửi mật khẩu</button>
+                    <button type="submit" class="btn btn-default guimk">Gửi mật khẩu</button>
                 </div>
             </div>
         </form>
@@ -587,26 +382,28 @@
             </div>
 
     
-        <div class="footer">
+    <!-- Footer -->
+<div class="footer">
 
     <div class="footer-content clearfix">
         <div class="container">
             <div class="row">
                 <div class="footer-box box-address col-md-3 col-sm-12 col-xs-12">
                     <div class="item">
-                        <div class="footer-logo">
-                            <img class="img-responsive" src="/Uploads/shop324/images/pregnancy-birth-baby-logo.png" />
+                        <div class="footer-logo text-center">
+                            <img class="img-responsive" src="/images/logo.png" 
+                            style="width: 100px; background-color: #fff; border-radius: 50px; box-shadow: #fff 0px 0px 5px 1px;"/>
                         </div>
                         <div class="box-address-content">
-                            <b>B&#225;n đồ trẻ em</b>
-                            <div class="docs"><i class="fa fa-map-marker"></i> 680 XVNT - P.25 - B&#236;nh Thạnh - Hồ Ch&#237; Minh</div>
+                            <b class="text-center">SELLPHONE</b>
+                            <div class="docs"><i class="fa fa-map-marker"></i> 23/5 ô 13 - KVPMQT  - Q.12 - Hồ Chí Minh</div>
                             <div class="docs">
                                 <i class="fa fa-envelope"></i>
-                                <a href="mailto:info@runtime.vn">info@runtime.vn</a>
+                                <a href="mailto:newbee@gmail.com">newbee@gmail.com</a>
                             </div>
                             <div class="docs">
                                 <i class="fa fa-phone"></i>
-                                Phone: 0969012033
+                                Phone: 0123456789
                             </div>
                         </div>
                     </div>
@@ -614,21 +411,21 @@
                     <div class="footer-box col-md-3 col-sm-12 col-xs-12">
                         <div class="item">
                             <h3>
-                                <span>Giới thiệu</span>
+                                <span style="color: rgb(243, 21, 89);">Giới thiệu</span>
                             </h3>
                         </div>
-                            <ul>
-                                                <li>
+                            <ul style="list-style: none;">
+                                                <li style="list-style: none;">
                                                     <a href="/gioi-thieu.html">
-                                                        Về ch&#250;ng t&#244;i
+                                                        Về chúng tôi
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <li style="list-style: none;">
                                                     <a href="/gioi-thieu.html">
                                                         Lĩnh vực hoạt động
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <li style="list-style: none;">
                                                     <a href="/content/tuyen-dung.html">
                                                         Tuyển dụng
                                                     </a>
@@ -638,137 +435,51 @@
                     <div class="footer-box col-md-3 col-sm-12 col-xs-12">
                         <div class="item">
                             <h3>
-                                <span>Trợ gi&#250;p</span>
+                                <span style="color: rgb(243, 21, 89);">Trợ giúp</span>
                             </h3>
                         </div>
                             <ul>
-                                                <li>
+                                                <li style="list-style: none;">
                                                     <a href="/content/huong-dan-thanh-toan.html">
-                                                        Hướng dẫn thanh to&#225;n
+                                                        Hướng dẫn thanh toán
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <li style="list-style: none;">
                                                     <a href="/content/quy-dinh-doi-tra.html">
                                                         Quy định đổi trả
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <li style="list-style: none;">
                                                     <a href="/content/chinh-sach-ban-hang.html">
-                                                        Ch&#237;nh s&#225;ch b&#225;n h&#224;ng
+                                                        Chính sách bán hàng
                                                     </a>
                                                 </li>
                             </ul>
                     </div>
                 <div class="footer-box box-social col-md-3 col-sm-12 col-xs-12">
-                    <div class="item">
-                        <h3>
-                            Facebook
+                    <div class="footer-links">
+                        <h3 style="color: rgb(243, 21, 89);" >
+                            Theo dõi chúng tôi tại
                         </h3>
-                        <div class="fb-like-box" data-href="https://www.facebook.com/runtime.vn" data-width="289"
-                             data-height="250" data-colorscheme="dark" data-show-faces="true" data-header="false"
-                             data-stream="false" data-show-border="false">
-                        </div>
-                        <div class="social-icon">
+                        
+                        <div class="social-icon links">
                             <ul>
-                                <li><a target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="https://www.facebook.com/runtime.vn" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a target="_blank"><i class="fa fa-youtube"></i></a></li>
-                                <li><a target="_blank"><i class="fa fa-twitter "></i></a></li>
+                                <li><a target="" class="theodoi"><i class="fa-brands fa-facebook icontheodoi"></i></a></li>
+                                <li><a target="" class="theodoi"><i class="fa-brands fa-github icontheodoi"></i></a></li>
+                                <li><a target="" class="theodoi"><i class="fa-brands fa-twitter icontheodoi"></i></a></li>
                             </ul>
                         </div>
                     </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-<!--Template--
-<div class="footer-content clearfix" ng-controller="moduleController" ng-init="initFooterController('Shop')">
-    <div class="container">
-        <div class="row">
-            <div class="footer-box box-address col-md-3 col-sm-12 col-xs-12">
-                <div class="item">
-                    <div class="footer-logo">
-                        <img ng-src="{{shop.Logo}}" class="img-responsive">
-                    </div>
-                    <div class="box-address-content">
-                        <b>{{shop.Name}}</b>
-                        <div class="docs"><i class="fa fa-map-marker"></i> {{shop.Address}}</div>
-                        <div class="docs">
-                            <i class="fa fa-envelope"></i>
-                            <a href="mailto:{{shop.Email}}">{{shop.Email}}</a>
-                        </div>
-                        <div class="docs">
-                            <i class="fa fa-phone"></i>
-                            Phone: {{shop.Phone}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-box col-md-3 col-sm-12 col-xs-12" ng-repeat="item in menus|filter: { ParentId: null }|limitTo:2">
-                <div class="item">
-                    <h3>
-                        <span>{{item.Name}}</span>
-                    </h3>
-                </div>
-                <ul ng-if="(menus|filter: { ParentId: item.Id }).length>0">
-                    <li ng-repeat="it in menus|filter: { ParentId: item.Id }">
-                        <a href="/{{it.PageCode}}.html" ng-if="it.LinkType==LinkTypeConst.Page">
-                            {{it.Name}}
-                        </a>
-                        <a href="/{{it.PageOptionCode}}/{{it.PageContentCode}}.html" ng-if="it.LinkType==LinkTypeConst.PageContent">
-                            {{it.Name}}
-                        </a>
-                        <a href="/san-pham/{{it.ProductGroupCode}}" ng-if="it.LinkType==LinkTypeConst.GroupProduct">
-                            {{it.Name}}
-                        </a>
-                        <a href="/tin-tuc/{{it.NewsGroupCode}}" ng-if="it.LinkType==LinkTypeConst.GroupNews">
-                            {{it.Name}}
-                        </a>
-                        <a href="/du-an/{{it.ProjectGroupCode}}" ng-if="it.LinkType==LinkTypeConst.GroupProject">
-                            {{it.Name}}
-                        </a>
-                        <a href="/dich-vu/{{it.ServiceGroupCode}}" ng-if="it.LinkType==LinkTypeConst.GroupService">
-                            {{it.Name}}
-                        </a>
-                        <a href="/san-giao-dich/{{it.ExchangeGroupCode}}" ng-if="it.LinkType==LinkTypeConst.GroupExchange">
-                            {{it.Name}}
-                        </a>
-                        <a href="{{it.Url}}" ng-if="it.LinkType==LinkTypeConst.Url">
-                            {{it.Name}}
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-box box-social col-md-3 col-sm-12 col-xs-12">
-                <div class="item">
-                    <h3>
-                        Facebook
-                    </h3>
-                    <div data-show-border="false" data-stream="false" data-header="false" data-show-faces="true" data-colorscheme="dark" data-height="190" data-width="289" data-href="{{shop.Fanpage}}" class="fb-like-box">
-                    </div>
-                    <div class="social-icon">
-                        <ul>
-                            <li><a href="{{shop.Google}}"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="{{shop.Facebook}}"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="{{shop.Youtube}}"><i class="fa fa-youtube"></i></a></li>
-                            <li><a href="{{shop.Twitter}}"><i class="fa fa-twitter "></i></a></li>
-                        </ul>
+                    <div class="">
+                        <iframe style="margin-top: 60px; border-radius: 10px;" width="280" height="200" src="https://www.youtube.com/embed/UskBAildgLg" 
+                        title="[HỌC CÙNG MÌNH] 3-HOUR STUDY WITH ME 🎡 / ambient ver. / Yokohama at Sunset / Pomodoro 25-5" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="footer-bottom clearfix">
-    <div class="container">
-        <div class="row">
-            &copy; 2015 RUNTIME Store. All Rights Reserved. Designed by <a target="_blank" href="http://www.runtime.vn">RUNTIME.VN</a>
-        </div>
-    </div>
-</div>
---End-->
-        </div>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -795,7 +506,7 @@
 </body>
 </html>
 <script type="text/javascript">
-    $(".header-content").css({ "background": '#d1d45c' });
+    $(".header-content").css({ "background": 'rgb(255, 246, 246)' });
     $("html").addClass('boxed-layout');
     $(document).ready(function () {
         $("img.lazy-img").each(function () {
