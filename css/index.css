@@ -1,0 +1,56 @@
+/* search */
+
+#timkiem {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: none;
+    
+    border: rgb(243, 21, 89) solid 1px;
+}
+
+#btntimkiem{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border:1px solid rgb(243, 21, 89);
+    color: rgb(243, 21, 89);
+    background-color: rgba(255, 255, 255, 0.007);
+}
+
+#btntimkiem:hover{
+    background-color: rgb(243, 21, 89);
+    color: #fff;
+    box-shadow: rgb(243, 21, 89) 0px 0px 10px 2px;
+}
+/* sản phẩm */
+
+.logo{
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+
+.theodoi{
+    border-radius: 100px;
+    margin: 5px;
+}
+  
+.footer-links .links  {
+    position: absolute;
+ }
+
+.footer-links .links a i {
+    font-size: 2.2rem;
+    color: #F1EFEF;
+    display: flex;
+    align-items: center;
+    margin-left: -1px;
+ }
+
+ .footer-links .links a i:hover{
+    color: rgb(243, 21, 89);
+ } 
+
+ .footer-box li a:hover{
+    transform: translate( 10px);
+}

@@ -1,0 +1,192 @@
+/* header */
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/* search */
+
+.iptim{
+    border: 1px solid rgb(243, 21, 89);
+    background:none;
+}
+
+.iptim:link{
+    background-color: rgb(255, 255, 255);
+}
+
+.btntim{
+    border: 1px solid rgb(243, 21, 89);
+    color: gray;
+}
+
+.btntim:hover{
+    background-color: rgb(243, 21, 89);
+    color: #fff;
+    box-shadow: rgb(243, 21, 89) 0px 0px 10px 2px;
+}
+
+.giohang{
+    background-color: rgba(128, 128, 128, 0.144);
+    color: rgb(243, 21, 89);
+    border-radius: 47%;
+    padding: 15px 20px;
+}
+
+.giohang:hover{
+    background-color: rgb(255, 33, 113);
+    color: rgb(255, 255, 255);
+}
+
+.btndn{
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.btndn a{
+    text-decoration: none;
+    color: rgb(243, 21, 89);
+}
+
+.btndn a:hover{
+    color: #fff;
+}
+
+.btndn:hover{
+    background-color: rgb(243, 21, 89);
+    color: #fff;
+}
+
+.btndk a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btndk{
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: rgb(243, 21, 89);
+}
+
+
+
+.btndk:hover{
+    background-color: rgba(243, 21, 88, 0.637);
+}
+
+.btndk a:hover{
+    color: rgb(243, 21, 89);
+}
+
+
+/* nút đăng ký */
+.button{
+    position:relative;
+    display:inline-block;
+    margin:20px;
+  }
+  
+  .button a{
+    color:white;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:12pt;
+    text-align: center;
+    text-decoration:none;
+    background-color:rgb(243, 21, 89);
+    display:block;
+    position:relative;
+    padding:10px 20px;
+    
+    -webkit-tap-highlight-color: rgb(100, 56, 67);
+    text-shadow: 0px 1px 0px #643843;
+    filter: dropshadow(color=#643843, offx=0px, offy=1px);
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #B70404;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #B70404;
+    box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #B70404;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  .button a:active{
+    top:10px;
+    background-color: rgb(243, 21, 89);
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #B70404;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #B70404;
+    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #B70404;
+  }
+  
+  .button:after{
+    content:"";
+    height:100%;
+    width:100%;
+    padding:3px;
+    position: absolute;
+    bottom:-15px;
+    left:0px;
+    z-index:-1;
+    background-color:#643843;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+
+.bodydesign{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.navitem{
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.navitem:hover{
+    background-color: rgb(243, 21, 89);
+    transition: 1s;
+}
+
+.sanpham p a{
+    text-decoration: none;
+    color: #000;
+}
+
+.gioithieu p a{
+    text-decoration: none;
+    color: #000;
+}
+
+.sanpham p a:hover{
+    color: rgb(243, 21, 89);
+    margin-left: 4px;
+    transition: 0.5s;
+    
+}
+
+.gioithieu p a:hover{
+    color: rgb(243, 21, 89);
+    margin-left: 4px;
+    transition: 0.5s;
+}
+
+h6{
+    color: rgb(243, 21, 89); 
+}
+
+.carousel{
+    position: relative;
+}
+
+
+
