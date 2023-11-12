@@ -1,66 +1,323 @@
+
+/* header */
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
 /* search */
 
-#timkiem {
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    border: none;
-    
-    border: rgb(243, 21, 89) solid 1px;
+.iptim{
+    border: 1px solid rgb(243, 21, 89);
+    background:none;
 }
 
-#btntimkiem{
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    border:1px solid rgb(243, 21, 89);
-    color: rgb(243, 21, 89);
-    background-color: rgba(255, 255, 255, 0.007);
+.iptim:link{
+    background-color: rgb(255, 255, 255);
 }
 
-#btntimkiem:hover{
+.btntim{
+    border: 1px solid rgb(243, 21, 89);
+    color: gray;
+}
+
+.btntim:hover{
     background-color: rgb(243, 21, 89);
     color: #fff;
     box-shadow: rgb(243, 21, 89) 0px 0px 10px 2px;
 }
 
-.logo{
-    width: 20%;
-    border-radius: 50%;
-    margin-right: 15px;
+.giohang{
+    background-color: rgba(128, 128, 128, 0.144);
+    color: rgb(243, 21, 89);
+    border-radius: 47%;
+    padding: 15px 20px;
 }
 
-.dangky{
-    border: none;
+.giohang:hover{
+    background-color: rgb(255, 33, 113);
+    color: rgb(255, 255, 255);
+}
+
+.btndn{
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.btndn a{
+    text-decoration: none;
+    color: rgb(243, 21, 89);
+}
+
+.btndn a:hover{
+    color: #fff;
+}
+
+.btndn:hover{
     background-color: rgb(243, 21, 89);
     color: #fff;
+}
+
+.btndk a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btndk{
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: rgb(243, 21, 89);
+}
+
+
+
+.btndk:hover{
+    background-color: rgba(243, 21, 88, 0.637);
+}
+
+.btndk a:hover{
+    color: rgb(243, 21, 89);
+}
+
+
+/* nút đăng ký */
+.button{
+    position:relative;
+    display:inline-block;
+    margin:20px;
+  }
+  
+  .button a{
+    color:white;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:12pt;
+    text-align: center;
+    text-decoration:none;
+    background-color:rgb(243, 21, 89);
+    display:block;
+    position:relative;
+    padding:10px 20px;
+    
+    -webkit-tap-highlight-color: rgb(100, 56, 67);
+    text-shadow: 0px 1px 0px #643843;
+    filter: dropshadow(color=#643843, offx=0px, offy=1px);
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #B70404;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #B70404;
+    box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #B70404;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  .button a:active{
+    top:10px;
+    background-color: rgb(243, 21, 89);
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #B70404;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #B70404;
+    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #B70404;
+  }
+  
+  .button:after{
+    content:"";
+    height:100%;
+    width:100%;
+    padding:3px;
+    position: absolute;
+    bottom:-15px;
+    left:0px;
+    z-index:-1;
+    background-color:#643843;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+
+  .bodydesign{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.navitem{
+    text-align: center;
+    width: 100px;
     border-radius: 5px;
 }
 
-.theodoi{
-    border-radius: 100px;
-    margin: 5px;
+.navitem:hover{
+    background-color: rgb(243, 21, 89);
+    transition: 1s;
 }
-  
-.footer-links .links  {
-    position: absolute;
- }
 
-.footer-links .links a i {
-    font-size: 2.2rem;
-    color: #F1EFEF;
-    display: flex;
-    align-items: center;
-    margin-left: -1px;
- }
+.sanpham p a{
+    text-decoration: none;
+    color: #000;
+}
 
- .footer-links .links a i:hover{
+.gioithieu p a{
+    text-decoration: none;
+    color: #000;
+}
+
+.sanpham p a:hover{
     color: rgb(243, 21, 89);
- } 
-
- .footer{
-    margin-bottom: 1000px;
- }
-
- .footer-box li a:hover{
-    transform: translate( 10px);
+    margin-left: 4px;
+    transition: 0.5s;
+    
 }
+
+.gioithieu p a:hover{
+    color: rgb(243, 21, 89);
+    margin-left: 4px;
+    transition: 0.5s;
+}
+
+h6{
+    color: rgb(243, 21, 89); 
+}
+
+.carousel{
+    position: relative;
+}
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+/* search */
+.iptim{
+    border: 1px solid rgb(243, 21, 89);
+    background:none;
+}
+
+.iptim:link{
+    background-color: rgb(255, 255, 255);
+}
+
+.btntim{
+    border: 1px solid rgb(243, 21, 89);
+    color: gray;
+    font-size: 16px;
+}
+
+.btntim:hover{
+    background-color: rgb(243, 21, 89);
+    color: #fff;
+    box-shadow: rgb(243, 21, 89) 0px 0px 10px 2px;
+}
+.navitem{
+    text-align: center;
+    width: 150px;
+    border-radius: 5px;
+    
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.container-fluid{
+    margin-bottom: -3%;
+}
+.navitem:hover{
+    background-color: rgb(243, 21, 89);
+    transition: 1s;
+}
+.navbar-expand-lg{
+    height: 60px;
+    width: 110%;
+    margin-left: -5%;
+    font-size: 18px;
+    
+}
+#navl{
+    color: black;
+    text-shadow: 0 0 2px rgb(255, 218, 218);
+}
+.order-check{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+.order-check:hover{
+    text-shadow: 0 0 2px rgb(255, 218, 218);
+    transition: 0.5s;
+}
+.order-cart{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+.order-cart:hover{
+    text-shadow: 0 0 2px rgb(255, 218, 218);
+    transition: 0.5s;
+}
+.account-login{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+.account-login:hover{
+    text-shadow: 0 0 2px rgb(255, 218, 218);
+    transition: 0.5s;
+}
+.account-register{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+.account-register:hover{
+    text-shadow: 0 0 2px rgb(255, 218, 218);
+    transition: 0.5s;
+}
+.img-responsive{
+    height: 100px;
+}
+.top-search{
+    height: 150px;
+}
+.ghct:hover{
+    color: rgb(243, 21, 89);
+    margin-right: -4px;
+    transition: 0.3s;
+}
+.ghct{
+    font-size: 18px; color: black ;
+     text-decoration: none;
+     margin-top: 20px;
+}
+.header-content.clearfix{
+    margin-top: -3%;
+}
+.navigation-menu.clearfix{
+    margin-top: -6%;
+}
+
+
+
+
+.imglogin{
+    width: 420px;
+    min-height: 500px;
+    
+}
+
+.imglogin img{
+    height: 100%;
+    object-fit: cover;
+}
+
 

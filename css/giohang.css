@@ -85,10 +85,20 @@
 }
 
 
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(240, 210, 218), rgb(245, 210, 220));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(236, 209, 217), rgb(240, 213, 221));
+    border-radius: 8px;
+    }
 
 
 .bodydesign{
-    background-color: whitesmoke;
     border-radius: 10px;
 }
 
@@ -130,17 +140,19 @@ h6{
     color: rgb(243, 21, 89); 
 }
 
-.carousel{
-    position: relative;
+.imglogin{
+    width: 420px;
+    min-height: 500px;
+    
 }
 
-.rspw{
-    background-color: rgba(243, 21, 88, 0.616); 
+.imglogin img{
+    height: 100%;
+    object-fit: cover;
 }
 
-.rspw:hover{
-    background-color: rgb(243, 21, 89); 
-    color: #fff;
+.bank img:hover{
+    transform: scale(1.2);
 }
 
 *{
@@ -260,17 +272,4 @@ h6{
     margin-top: -6%;
 }
 
-
-
-
-.imglogin{
-    width: 420px;
-    min-height: 500px;
-    
-}
-
-.imglogin img{
-    height: 100%;
-    object-fit: cover;
-}
 
