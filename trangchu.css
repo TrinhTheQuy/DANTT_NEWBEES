@@ -1,0 +1,243 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+/* search */
+
+.btntim{
+    border: 1px solid rgb(243, 21, 89);
+    color: gray;
+    font-size: 16px;
+}
+
+.btntim:hover{
+    background-color: rgb(243, 21, 89);
+    color: #fff;
+    box-shadow: rgb(243, 21, 89) 0px 0px 10px 2px;
+}
+.navitem{
+    text-align: center;
+    width: 150px;
+    border-radius: 5px;
+    
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.container-fluid{
+    margin-bottom: -3%;
+}
+.navitem:hover{
+    background-color: rgb(243, 21, 89);
+    transition: 1s;
+}
+.navbar-expand-lg{
+    height: 60px;
+    width: 110%;
+    margin-left: -5%;
+    font-size: 18px;
+    
+}
+#navl{
+    color: black;
+    text-shadow: 0 0 2px rgb(255, 218, 218);
+}
+.order-check{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+.order-check:hover{
+    text-shadow: 0 0 2px rgb(255, 218, 218);
+    transition: 0.5s;
+}
+.order-cart{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+.order-cart:hover{
+    text-shadow: 0 0 2px rgb(255, 218, 218);
+    transition: 0.5s;
+}
+.account-login{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+.account-login:hover{
+    text-shadow: 0 0 2px rgb(255, 218, 218);
+    transition: 0.5s;
+}
+.account-register{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+.account-register:hover{
+    text-shadow: 0 0 2px rgb(255, 218, 218);
+    transition: 0.5s;
+}
+.img-responsive{
+    height: 100px;
+}
+.top-search{
+    height: 150px;
+}
+.ghct:hover{
+    color: aqua;
+    margin-right: -4px;
+    transition: 0.3s;
+}
+.ghct{
+    font-size: 18px; color: black ;
+     text-decoration: none;
+     margin-top: 20px;
+}
+.header-content.clearfix{
+    margin-top: -3%;
+}
+.navigation-menu.clearfix{
+    margin-top: -6%;
+}
+.sp{
+    background: white;
+    color: rgb(236, 16, 137);
+    letter-spacing: 1px;
+    text-shadow: 0 0 3px rgb(243, 21, 89);
+    padding-bottom: 0px;
+}
+ul li a.tsp{
+    text-decoration: none;
+    text-transform: initial;
+    font-size: 18px;
+}
+
+ul li a.tsp:hover{
+    background: rgb(255, 246, 246);
+    font-style: italic;
+
+}
+.product-item{
+    background: white;
+    margin-top: 10px;
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.product-item:hover{
+    transform: translateY(-8px);
+    box-shadow: rgb(253, 166, 192) 0px 0px 5px 1px;
+}
+#img-responsive{
+    width: 80%;
+    height: 150px;
+}
+.fa-caret-left{
+    color: black;
+}
+.fa-th-list{
+    color: black;
+}
+.fa-th-list:hover{
+    color: rgb(243, 21, 89);
+}
+.limit{
+    margin-left: -65%;
+    color: black;
+    font-size: 14px;
+}
+#lblimit{
+    border-radius: 10px;
+}
+.sort{
+    color: black;
+    font-size: 14px;
+}
+#lbsort{
+    border-radius: 10px;
+}
+.view-more{
+    margin-top: -2.3%;
+}
+#name{
+    color: black;
+    text-decoration: none;
+    font-size: 21px;
+}
+#name:hover{
+    color: rgb(243, 21, 89);
+}
+#gud{
+    font-size: 14px;
+    color: black;
+}
+#gn{
+    color: red;
+}
+#go{
+    color: black;
+}.sao{
+    height: 14px;
+    margin-bottom: 6px;
+}
+#nutmua:hover{
+    background-color: rgb(243, 21, 89);
+    color: #fff;
+    box-shadow: rgb(243, 21, 89) 0px 0px 10px 2px;
+    border: 1px solid black;
+}
+.sanpham p a{
+    text-decoration: none;
+    color: #000;
+}
+
+.gioithieu p a{
+    text-decoration: none;
+    color: #000;
+}
+
+.sanpham p a:hover{
+    color: rgb(243, 21, 89);
+    margin-left: 4px;
+    transition: 0.5s;
+    
+}
+
+.gioithieu p a:hover{
+    color: rgb(243, 21, 89);
+    margin-left: 4px;
+    transition: 0.5s;
+}
+
+h6{
+    color: rgb(243, 21, 89); 
+}
+
+.carousel{
+    position: relative;
+}
+#chaomung{
+    color: rgb(243, 21, 89);
+    font-size: 30px;
+    margin-left: 25%;
+    text-shadow: 0 0 2px rgb(19, 18, 18);
+}
+#chao{
+    color: black;
+    margin-left: 30%;
+    font-size: 15px;
+}
+#fa-angle-up{
+    background: rgb(253, 208, 223);
+}
+#fa-angle-up:hover{
+    box-shadow: rgb(243, 21, 89) 0px 0px 5px 1px;
+    background-color: rgb(243, 21, 89);
+}
