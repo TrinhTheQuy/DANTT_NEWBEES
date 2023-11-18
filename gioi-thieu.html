@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html class="no-js" lang="vi">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta charset="UTF-8" />
+    <title>Giới thiệu</title>
+    <meta name="description" />
+    <meta name="keywords" />
+    <link rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/gioithieu.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="fb:app_id" content="227481454296289" />
+
+    <meta content="vi_VN" property="og:locale" />
+    <meta content="website" property="og:type" />
+    <meta content="Giới thiệu" property="og:title" />
+    <meta property="og:description" />
+    <meta property="og:image" />
+    <meta property="og:url" />
+    <meta property="og:site_name" />
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <link href="/App_Themes/Home/font-awesome.min.css" rel="stylesheet" />
+        <link href="/App_Themes/Home/common.css" rel="stylesheet" type="text/css" />
+        <link href="/App_Themes/Home/animate.css" rel="stylesheet" type="text/css" />
+        <link href="/Scripts/jQuery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="/Scripts/jQuery/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jQuery/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="/Scripts/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="/Scripts/jQuery-ui/jquery-ui.min.js" type="text/javascript"></script>
+
+    <script src="/Scripts/common/fix-height.js" data-img-box=".image-resize" type="text/javascript"></script>
+    <script src="/Scripts/common/common.js" type="text/javascript"></script>
+    <script src="/Scripts/common/jquery.cookie.js" type="text/javascript"></script>
+    <script src="/Scripts/common/mycard.js" type="text/javascript"></script>
+    <script src="/Scripts/lazyLoad/jquery.lazyload.min.js" type="text/javascript"></script>
+
+    <script src="/Scripts/angularJS/angular.min.js"></script>
+    <script src="/Scripts/angularJS/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-loading-spinner/spin.min.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-loading-spinner/angular-spinner.min.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-loading-spinner/angular-loading-spinner.js"></script>
+    <script src="/app/appMain.js"></script>
+    <script src="/app/directives/directive.js"></script>
+    <script src="/app/directives/angular-summernote.js"></script>
+    <script src="/app/directives/paging.js"></script>
+    <script src="/app/services/ajaxServices.js"></script>
+    <script src="/app/services/alertsServices.js"></script>
+    <link href="http://static.runtime.vn/App_Themes/RUN045/style.css" rel="stylesheet" type="text/css" />
+    <link href="http://static.runtime.vn/App_Themes/RUN045/responsive.css" rel="stylesheet" type="text/css" />
+
+
+
+
+</head>
+
+<body ng-app="appMain" style="background:rgb(255, 246, 246)">
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=227481454296289";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+    <div class="wrapper" style="background: rgb(255, 246, 246);">
+        <div class="header">
+
+            <script src="/Scripts/common/login.js" type="text/javascript"></script>
+            <div class="col-md-12">
+                <div class="header navbar navbar-expand-lg"
+                    style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px);">
+                    <div class="container">
+                        <li style="color: rgb(255, 33, 113); list-style: none; font-weight: bold;"><i
+                                class="fa fa-phone"></i> <span>Hotline:0969012033</span></li>
+                        <ul class="nav navbar-nav navbar-right topmenu  hidden-xs hidden-sm">
+                            <li><a class="order-check" href="/kiem-tra-don-hang.html"><i class="fa fa-pencil"></i> Kiểm
+                                    tra đơn hàng</a></li>
+                            <li><a class="order-cart" href="/gio-hang.html"><i class="fa fa-shopping-cart"></i> Giỏ
+                                    hàng</a></li>
+                            <li><a class="account-login" href="/dang-nhap.html"><i class="fa fa-sign-in"></i> Đăng nhập
+                                </a></li>
+                            <li><a class="account-register" href="/dang-ky.html"><i class="fa fa-key"></i> Đăng ký </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <section class="header-content clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12 logo text-center" style="height:auto ;">
+                            <a href="/" title="">
+                                <img alt="" src="/images/logo.png" class="img-responsive" style="margin-top: 20px;" />
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-5 col-xs-12 top-search">
+                            <div class="search">
+                                <div class="p-3">
+                                    <div class="input-group tim">
+                                        <input type="search" class="form-control iptim" placeholder="Tìm kiếm..."
+                                            aria-label="Search" aria-describedby="search-addon"
+                                            style="border: 1px solid rgb(243, 21, 89); font-size: 16px;" />
+                                        <button type="button" class="btn btntim"
+                                            style="border: 1px solid rgb(243, 21, 89);"><i
+                                                class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-group">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-12 top-cart hidden-xs">
+                            <div class="cart">
+                                <div class="heading">
+                                    <a class="ghct" href="/gio-hang.html">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        0 SP - 0đ
+                                        </span><i class="fa fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+            </section>
+            <script type="text/javascript">
+                $("#btnsearch").click(function () {
+                    SearchProduct();
+                });
+                $("#txtsearch").keydown(function (event) {
+                    if (event.keyCode == 13) {
+                        SearchProduct();
+                    }
+                });
+                function SearchProduct() {
+                    var key = $('#txtsearch').val();
+                    if (key == '' || key == 'Tìm kiếm...') {
+                        $('#txtsearch').focus();
+                        return;
+                    }
+                    var group = $('#lbgroup').val();
+                    window.location = '/tim-kiem.html?group=' + group + '&key=' + key;
+                }
+            </script>
+            <section class="navigation-menu clearfix" style="background: white; ">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light p-2">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item navitem m-1">
+                                        <a class="nav-link" aria-current="page" href="/trang-chu.html" id="navl"><i
+                                                class="fa fa-home"></i> TRANG CHỦ</a>
+                                    </li>
+                                    <li class="nav-item navitem m-1">
+                                        <a class="nav-link" href="/gioi-thieu.html" id="navl"> <i
+                                                class="fa fa-id-card"></i> GIỚI THIỆU</a>
+                                    </li>
+                                    <li class="nav-item navitem m-1">
+                                        <a class="nav-link" href="/san-pham.html" id="navl"> <i
+                                                class="fa fa-briefcase"></i> SẢN PHẨM</a>
+                                    </li>
+                                    <li class="nav-item navitem m-1">
+                                        <a class="nav-link" href="/tin-tuc.html" id="navl"> <i
+                                                class="fa fa-newspaper"></i> TIN TỨC</a>
+                                    </li>
+                                    <li class="nav-item navitem m-1">
+                                        <a class="nav-link" href="/lien-he.html" id="navl"> <i class="fa fa-phone"></i>
+                                            LIÊN HỆ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    var str = location.href.toLowerCase();
+                    $("ul.menu li a").each(function () {
+                        if (str.indexOf(this.href.toLowerCase()) >= 0) {
+                            $("ul.menu li").removeClass("active");
+                            $(this).parent().addClass("active");
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+
+
+
+
+
+
+        <div class="main" >
+            <div class="container" >
+                <div class="row" >
+                    <div class="col-md-3" >
+
+                        <div class="menu-product">
+                            <h3>
+                                <span class="sp">
+                                    Giới thiệu
+                                </span>
+                            </h3>
+
+                            <ul>
+                                <li><a href="/gioi-thieu/ve-chung-toi.html" class="gth"
+                                        style="text-transform: initial;"> <i class='fa fa-arrow-circle-o-right' style="font-size: 15px;"></i> Về ch&#250;ng t&#244;i</a></li>
+                                <li><a href="/gioi-thieu/linh-vuc-hoat-dong.html" class="gth"
+                                        style="text-transform: initial;"> <i class='fa fa-arrow-circle-o-right' style="font-size: 15px;"></i> Lĩnh vực hoạt động</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9" id="noidung">
+
+                        <div class="breadcrumb clearfix">
+                            <ul>
+                                <li itemtype="http://shema.org/Breadcrumb" itemscope="" class="home">
+                                    <a title="Đến trang chủ" href="/trang-chu.html" itemprop="url"
+                                        style="text-decoration: none;"><span itemprop="title" id="home">Trang
+                                            chủ</span></a>
+                                </li>
+                                <li class="icon-li"><strong id="about">Giới thiệu</strong> </li>
+                            </ul>
+                        </div>
+                        <script type="text/javascript">
+                            $(".link-site-more").hover(function () { $(this).find(".s-c-n").show(); }, function () { $(this).find(".s-c-n").hide(); });
+                        </script>
+                        <div class="about-detail">
+                            <div class="about-block">
+                                <h1 class="title clearfix"><span> <b> Về chúng tôi</b></span></h1>
+                                <div class="content">
+                                    <div style="margin: 0px; padding: 0px; color: rgb(55, 55, 55); line-height: 18px;">
+                                        <div
+                                            style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; margin: 0px; padding: 0px;">
+                                            Dưới đây là nội dung mẫu của chúng tôi. Nội dung này chỉ mang tính chất minh
+                                            họa:</div>
+                                        <div
+                                            style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; margin: 0px; padding: 0px;">
+                                            <br style="box-sizing: border-box;"></div>
+                                        <div
+                                            style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; margin: 0px; padding: 0px;">
+                                            <p
+                                                style="box-sizing: border-box; margin-bottom: 10px; outline: 0px; vertical-align: baseline; color: rgb(51, 51, 51); font-family: Arial, sans-serif; line-height: 17.1429px; text-align: justify; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+                                                Được thành lập vào năm <span
+                                                    style="box-sizing: border-box; font-weight: 700; outline: 0px; vertical-align: baseline; background: transparent;">2006</span>
+                                                , Hệ thống cửa hàng Mẹ & Bé Bibo Mart thuộc quyền quản lý của Công ty cổ
+                                                phần Bibo Mart, chuyên cung cấp các sản phẩm dành cho các mẹ (trong giai
+                                                đoạn thai kỳ và giai đoạn hậu sản) và các bé (trong độ tuổi từ 0~6
+                                                tuổi).</p>
+                                            <p
+                                                style="box-sizing: border-box; margin-bottom: 10px; outline: 0px; vertical-align: baseline; color: rgb(51, 51, 51); font-family: Arial, sans-serif; line-height: 17.1429px; text-align: justify; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+                                                Bibo Mart chiếm được lòng tin của <span
+                                                    style="box-sizing: border-box; font-weight: 700; outline: 0px; vertical-align: baseline; background: transparent;">hơn
+                                                    80.000</span> mẹ bầu bởi chúng tôi là Địa chỉ cung cấp đồ
+                                                sơ sinh Số 1 tại Việt Nam hiện nay. Bibo Mart là nhà nhập khẩu
+                                                và phân phối trực tiếp các dòng sản phẩm cao cấp cho bé từ
+                                                Thái Lan, Hồng Kông, Pháp, Tây Ban Nha... Đặc biệt Bibo Mart có đội
+                                                ngũ nhân viên tư vấn tại các quầy sơ sinh và tư vấn online là các <span
+                                                    style="box-sizing: border-box; font-weight: 700; outline: 0px; vertical-align: baseline; background: transparent;">y
+                                                    tá tốt nghiệp các trường đại học và cao đẳng </span>chuyên nghành
+                                                nhi - sản để cung cấp thông tin hữu ích nhất cho các mẹ.</p>
+                                            <p
+                                                style="box-sizing: border-box; margin-bottom: 10px; outline: 0px; vertical-align: baseline; color: rgb(51, 51, 51); font-family: Arial, sans-serif; line-height: 17.1429px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+                                            </p>
+                                            <p
+                                                style="box-sizing: border-box; margin-bottom: 10px; outline: 0px; vertical-align: baseline; color: rgb(51, 51, 51); font-family: Arial, sans-serif; line-height: 17.1429px; text-align: center; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+                                                <img src="/images/hinh12.jpg"
+                                                    style="box-sizing: border-box; vertical-align: baseline; max-width: 100%; outline: 0px; height: 400px; width: 600px; background: transparent;">
+                                            </p>
+                                            <p
+                                                style="box-sizing: border-box; margin-bottom: 10px; outline: 0px; vertical-align: baseline; color: rgb(51, 51, 51); font-family: Arial, sans-serif; line-height: 17.1429px; text-align: center; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+                                                <em
+                                                    style="box-sizing: border-box; outline: 0px; vertical-align: baseline; background: transparent;">Với
+                                                    hơn 20.000 mặt hàng đa dạng về chủng loại và số lượng, Bibo Mart sẵn
+                                                    sàng đáp ứng mọi nhu cầu của khách hàng</em></p>
+                                            <p
+                                                style="box-sizing: border-box; margin-bottom: 10px; outline: 0px; vertical-align: baseline; color: rgb(51, 51, 51); font-family: Arial, sans-serif; line-height: 17.1429px; text-align: justify; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+                                                Các sản phẩm tại Bibo Mart luôn <span
+                                                    style="box-sizing: border-box; font-weight: 700; outline: 0px; vertical-align: baseline; background: transparent;">được
+                                                    sắp xếp theo đúng chuẩn trưng bày </span>của Hệ thống. Các nhóm sản
+                                                phẩm được phân thành các khu vực như khu sơ sinh, khu trưng bày xe - nôi
+                                                - cũi, quầy sữa thực phẩm cho bé .... nhằm giúp các mẹ dễ dàng lựa chọn
+                                                các sản phẩm cần thiết nhất cho bé yêu của mình.</p>
+                                            <p
+                                                style="box-sizing: border-box; margin-bottom: 10px; outline: 0px; vertical-align: baseline; color: rgb(51, 51, 51); font-family: Arial, sans-serif; line-height: 17.1429px; text-align: justify; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+                                                Bibo Mart luôn <span
+                                                    style="box-sizing: border-box; font-weight: 700; outline: 0px; vertical-align: baseline; background: transparent;">nhiệt
+                                                    tình đón nhận những ý kiến đóng góp</span> từ phía Khách hàng thông
+                                                qua đường dây nóng <span
+                                                    style="box-sizing: border-box; font-weight: 700; outline: 0px; vertical-align: baseline; background: transparent;">1800
+                                                    6886</span> để ngày càng cải tiến và nâng cao hơn nữa chất lượng
+                                                phục vụ.</p>
+                                            <p
+                                                style="box-sizing: border-box; margin-bottom: 10px; outline: 0px; vertical-align: baseline; color: rgb(51, 51, 51); font-family: Arial, sans-serif; line-height: 17.1429px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+                                            </p>
+                                            <p
+                                                style="box-sizing: border-box; margin-bottom: 10px; outline: 0px; vertical-align: baseline; color: rgb(51, 51, 51); font-family: Arial, sans-serif; line-height: 17.1429px; text-align: center; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+                                                <img alt="" src="/images/hinh3.jpg"
+                                                    style="box-sizing: border-box; vertical-align: baseline; max-width: 100%; outline: 0px; width: 600px; height: 400px; background: transparent;">
+                                            </p>
+                                            <p
+                                                style="box-sizing: border-box; margin-bottom: 10px; outline: 0px; vertical-align: baseline; color: rgb(51, 51, 51); font-family: Arial, sans-serif; line-height: 17.1429px; text-align: justify; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+                                                Ngoài hệ thống cửa hàng tại Hà Nội và TP Hồ Chí Minh, Bibo Mart còn phát
+                                                triển Hệ thống<span
+                                                    style="box-sizing: border-box; font-weight: 700; outline: 0px; vertical-align: baseline; background: transparent;">
+                                                    bán hàng trực tuyến</span> hiện đại tại địa chỉ<a
+                                                    href="https://bibomart.com.vn/"
+                                                    style="box-sizing: border-box; color: rgb(51, 51, 51); outline: none; transition: all 0.3s ease-in-out; vertical-align: baseline; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span
+                                                        style="box-sizing: border-box; font-weight: 700; outline: 0px; vertical-align: baseline; background: transparent;">
+                                                        https://bibomart.com.vn</span></a>. Siêu thị trực tuyến của Hệ
+                                                thống của chúng tôi đang đón nhận hàng trăm ngàn lượt khách hàng truy
+                                                cập tra cứu thông tin sản phẩm và mua sắm mỗi ngày. Các khách
+                                                hàng mua hàng online không chỉ đến từ Hà Nội, TP Hồ Chí Minh, Hải
+                                                Phòng, Quảng Ninh, Vũng Tàu... mà còn vươn ra khắp các tỉnh thành
+                                                trên toàn quốc. </p>
+                                            <p
+                                                style="box-sizing: border-box; margin-bottom: 10px; outline: 0px; vertical-align: baseline; color: rgb(51, 51, 51); font-family: Arial, sans-serif; line-height: 17.1429px; text-align: justify; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">
+                                                Bibo Mart còn là <span
+                                                    style="box-sizing: border-box; font-weight: 700; outline: 0px; vertical-align: baseline; background: transparent;">đơn
+                                                    vị tiên phong</span> trong việc tổ chức các <span
+                                                    style="box-sizing: border-box; font-weight: 700; outline: 0px; vertical-align: baseline; background: transparent;">Lớp
+                                                    học tiền sản hoàn toàn miễn phí</span>
+                                                dành cho các mẹ bầu. Hơn <span
+                                                    style="box-sizing: border-box; font-weight: 700; outline: 0px; vertical-align: baseline; background: transparent;">500</span>
+                                                khóa học đã được tổ chức nhằm cung cấp các kiến thức, kỹ năng vô
+                                                cùng cần thiết và bổ ích trong suốt thời kỳ mang thai và chăm sóc
+                                                em bé sau sinh cho các mẹ bầu để vững tin đón bé yêu chào đời. Các
+                                                Chuyên gia đến từ các<span
+                                                    style="box-sizing: border-box; font-weight: 700; outline: 0px; vertical-align: baseline; background: transparent;">
+                                                    Bệnh viện nhi sản danh tiếng</span> tại Hà Nội (Bệnh viện Việt
+                                                Pháp) và TP Hồ Chí Minh (Bệnh viện Từ Dũ) đã cung cấp kiến thức,
+                                                hướng dẫn thực hành cho gần <span
+                                                    style="box-sizing: border-box; font-weight: 700; outline: 0px; vertical-align: baseline; background: transparent;">40.000
+                                                </span>ông bố bà mẹ trẻ trong các khóa học tại Bibo Mart.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="social-group">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="partner" style="background: rgb(255, 246, 246);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <link href="/Scripts/owl-carousel/owl.carousel.css" rel="stylesheet" />
+                        <link href="/Scripts/owl-carousel/owl.theme.css" rel="stylesheet" />
+                        <script src="/Scripts/owl-carousel/owl.carousel.min.js"></script>
+                        <script src="/app/services/moduleServices.js"></script>
+                        <script src="/app/controllers/moduleController.js"></script>
+                        <!--Begin-->
+                        <div class="partner-content owl-carousel" ng-controller="moduleController"
+                            ng-init="initPartnerController('Partners')">
+                            <h3 class="title clearfix"><span class="sp" style="background: rgb(255, 246, 246);">Đối
+                                    tác</span></h3>
+                            <div class="partner-block">
+                                <div class="partner-item" ng-repeat="item in Partners">
+                                    <a href="{{item.Link}}" target="_blank" title="{{item.Name}}">
+                                        <img ng-src="{{item.Logo}}" alt="{{item.Name}}" class="img-responsive" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="controls boxprevnext">
+                                <a class="prev prevlogo" style="background-color: rgb(248, 179, 214);"><i
+                                        class="fa fa-angle-left"></i></a>
+                                <a class="next nextlogo" style="background-color: rgb(248, 179, 214);"><i
+                                        class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                var owl = $(".partner-block");
+                                owl.owlCarousel({
+                                    autoPlay: true,
+                                    autoPlay: 5000,
+                                    items: 6,
+                                    slideSpeed: 1000,
+                                    pagination: false,
+                                    itemsDesktop: [1200, 6],
+                                    itemsDesktopSmall: [980, 5],
+                                    itemsTablet: [767, 4],
+                                    itemsMobile: [480, 2]
+                                });
+                                $(".partner-content .nextlogo").click(function () {
+                                    owl.trigger('owl.next');
+                                });
+                                $(".partner-content .prevlogo").click(function () {
+                                    owl.trigger('owl.prev');
+                                });
+                            });
+                        </script>
+                        <!--End-->
+                        <script type="text/javascript">
+                            window.Partners = [{ "Id": 1198, "ShopId": 324, "Name": "1", "Link": "#", "Logo": "/images/hinh3.jpg", "Index": 1, "Inactive": false }, { "Id": 1199, "ShopId": 324, "Name": "2", "Link": "#", "Logo": "/images/hinh5.jpg", "Index": 2, "Inactive": false }, { "Id": 1200, "ShopId": 324, "Name": "3", "Link": "#", "Logo": "/images/hinh6.jpg", "Index": 3, "Inactive": false }, { "Id": 1201, "ShopId": 324, "Name": "4", "Link": "#", "Logo": "/images/hinh6.jpg", "Index": 4, "Inactive": false }, { "Id": 1202, "ShopId": 324, "Name": "5", "Link": "#", "Logo": "/images/hinh13.jpg", "Index": 5, "Inactive": false }, { "Id": 1203, "ShopId": 324, "Name": "6", "Link": "#", "Logo": "/images/hinh11.jpg", "Index": 6, "Inactive": false }, { "Id": 1204, "ShopId": 324, "Name": "11", "Link": "", "Logo": "/images/hinh12.jpg", "Index": 7, "Inactive": false }];
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <footer class="text-center text-lg-start bg-white text-muted mt-5" style="font-size: 14px;">
+        <!-- Section: Social media -->
+        <div class="container">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Theo dõi chúng tôi:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+        </div>
+
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fa-solid fa-gem"></i> New Bee Phone
+                        </h6>
+                        <p>
+                            Ở đây chúng tôi có tất cả những chiếc điện thoại thông minh, xịn xò
+                            mà chắc chắn bạn sẽ cần ❤️.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Liên hệ</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> 23/5 - KVPMQT - Q.12 - Hồ Chí Minh</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            newbee22@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i> + 0768 916 167</p>
+                        <p><i class="fas fa-print me-3 text-secondary"></i> + 0256 678 882</p>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 sanpham">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Sản phẩm
+                        </h6>
+                        <p>
+                            <a href="#!" class="">Điện thoại</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="">Laptop</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="">Phụ kiện</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 gioithieu">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Giới thiệu
+                        </h6>
+                        <iframe class="mt-1" style="border-radius: 10px;" width="280" height="200"
+                            src="https://www.youtube.com/embed/UskBAildgLg"
+                            title="[HỌC CÙNG MÌNH] 3-HOUR STUDY WITH ME 🎡 / ambient ver. / Yokohama at Sunset / Pomodoro 25-5"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">NewBeeT.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".menu-quick-select ul").hide();
+            $(".menu-quick-select").hover(function () { $(".menu-quick-select ul").show(); }, function () { $(".menu-quick-select ul").hide(); });
+        });
+    </script>
+
+
+    <div style="display: none;" id="loading-mask">
+        <div id="loading_mask_loader" class="loader">
+            <img alt="Loading..." src="/Images/ajax-loader-main.gif" />
+            <div>
+                Please wait...
+            </div>
+        </div>
+    </div>
+    <a class="back-to-top" href="#" style="display: inline; text-decoration: none;">
+        <i class="fa fa-angle-up" id="fa-angle-up" >
+        </i>
+    </a>
+
+
+</body>
+
+</html>
+<script type="text/javascript">
+    $(".header-content").css({ "background": 'white' });
+    $("html").addClass('boxed-layout');
+    $(document).ready(function () {
+        $("img.lazy-img").each(function () {
+            //$(this).attr("data-original", $(this).attr("src"));
+            //$(this).attr("src", "/Images/blank.gif");
+        });
+        $("img.lazy-img").lazyload({
+            effect: "fadeIn",
+            threshold: 200
+        });
+    });
+</script>
