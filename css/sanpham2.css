@@ -10,6 +10,15 @@
     background-color: #fff;
     
 }
+
+.mieuta p{
+    font-size: 15pt;
+    margin-left: 10px;
+}
+
+.khuyenmai p {
+    font-size: 15pt;
+}
 /* search */
 
 .btntim{
@@ -311,4 +320,8 @@ h6{
       transform: scale(1.2);
       fill: var(--fill);
     }
+  }
+
+  .khuyenmai p{
+    width: 100%;
   }
